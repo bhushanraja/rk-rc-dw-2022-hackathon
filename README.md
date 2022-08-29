@@ -16,22 +16,22 @@ This is the backend application developed using SpringBoot and MySQL
 
 User will be able to access different services using the menu on home page
 
-![img.png](bluelin-ui/src/images/home_page.png)
+![img.png](blueline-ui/src/images/home_page.png)
 
 ### Booking Screen
 
 User will be able to book taxi service using booking page
 
-![img.png](bluelin-ui/src/images/booking_page.png)
+![img.png](blueline-ui/src/images/booking_page.png)
 
 ### Update Booking Screen
 
 User will be able to update existing booking using update booking page
 
-![img.png](bluelin-ui/src/images/update_booking_page.png)
+![img.png](blueline-ui/src/images/update_booking_page.png)
 
 ### Cancel Booking Screen
 
 User will be able to cancel existing booking using cancel booking page
 
-![img.png](bluelin-ui/src/images/cancel_booking_page.png)
+![img.png](blueline-ui/src/images/cancel_booking_page.png)
