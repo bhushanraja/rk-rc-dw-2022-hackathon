@@ -2,7 +2,7 @@
 Ravali Kuppachi and Rajabhushan Ceelam Project for DeveloperWeek Cloud 2022 Hackathon
 
 ![alt text](https://github.com/bhushanraja/rk-rc-dw-2022-hackathon/blob/main/blueline-ui/src/images/blue-line-taxis.jpeg?raw=true)
-## BlueLine is an online taxi booking and managing application.
+## BlueLine is an online taxi booking service.
 
 ### blueline-ui
 This is the frontend application developed using Angular
