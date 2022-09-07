@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueline-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: blueline-api
+  template:
+    metadata:
+      labels:
+        app: blueline-api
+        version: springboot
+    spec:
+      containers:
+        - name: blueline-api
+          image: blueline-api-springboot:0.1
+          imagePullPolicy: IfNotPresent
+            ports:
+            - name: http
+              containerPort: 3000
+          env:
+            - name: username
+              value: "root"
+            - name: bludburl
+              value: "jdbc:mysql://localhost:3306/bluelinetaxi_db"
+            - name: password
+              valueFrom:
+                secretKeyRef:
+                  name: dbuser
+                  key: dbpassword
+                  optional: true
+          volumeMounts:
+            - name: creds
+              mountPath: /msdataworkshop/creds
+          ports:
+            - containerPort: 3000
+      restartPolicy: Always
+      volumes:
+        - name: creds
+          secret:
+            secretName: %db-wallet-secret%
