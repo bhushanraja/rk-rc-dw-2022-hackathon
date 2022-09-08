@@ -2,6 +2,32 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
 
+## Services
+
+### Home Screen
+
+User will be able to access different services using the menu on home page
+
+![img.png](blueline-ui/src/images/home_page.png)
+
+### Booking Screen
+
+User will be able to book taxi service using booking page
+
+![img.png](blueline-ui/src/images/booking_page.png)
+
+### Update Booking Screen
+
+User will be able to update existing booking using update booking page
+
+![img.png](blueline-ui/src/images/update_booking_page.png)
+
+### Cancel Booking Screen
+
+User will be able to cancel existing booking using cancel booking page
+
+![img.png](blueline-ui/src/images/cancel_booking_page.png)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

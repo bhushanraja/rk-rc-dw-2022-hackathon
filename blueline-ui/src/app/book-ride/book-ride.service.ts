@@ -11,10 +11,10 @@ export class BookRideService {
   constructor(private http:HttpClient) { }
 
   getFares() :Observable<Fare[]>{
-    return this.http.get<Fare[]>("http://localhost:8765/bookings/fares");
+    return this.http.get<Fare[]>("http://bluelineapi-env.eba-gjgvptkm.us-east-1.elasticbeanstalk.com:5000//bookings/fares");
   }
   bookRide(bookRideData: any): Observable<any>{
-    return this.http.post<string>("http://localhost:8765/bookings/book-taxi",bookRideData);
+    return this.http.post<string>("http://bluelineapi-env.eba-gjgvptkm.us-east-1.elasticbeanstalk.com:5000/bookings/book-taxi",bookRideData);
   }
 
 }

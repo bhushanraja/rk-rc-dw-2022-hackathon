@@ -1,14 +1,8 @@
-# RK-RC-DW-2022-HACKATHON
-Ravali Kuppachi and Rajabhushan Ceelam Project for DeveloperWeek Cloud 2022 Hackathon
+# oci-arch-devops (devops_oke)
 
-![alt text](https://github.com/bhushanraja/rk-rc-dw-2022-hackathon/blob/main/blueline-ui/src/images/blue-line-taxis.jpeg?raw=true)
-## BlueLine is an online taxi booking service.
+Rapid delivery of software is essential for efficiently running your applications in the cloud. Oracle DevOps service provides an end-to-end continuous deployment experience to developers. Oracle DevOps service includes deploying pipelines to automate your continuous software deployment process (CD) to Oracle Cloud Infrastructure (OCI) platforms: Container Engine for Kubernetes (OKE), Functions, and Compute instances.
 
-### blueline-ui
-This is the frontend application developed using Angular
-
-### blueline-api
-This is the backend application developed using SpringBoot and MySQL
+For details of the architecture, see [_Build a Continuous Deployment Pipeline using Oracle Cloud Infrastructure DevOps service_](https://docs.oracle.com/en/solutions/build-pipeline-using-devops/index.html)
 
 ## Prerequisites
 
@@ -20,9 +14,9 @@ If you don't have the required permissions and quota, contact your tenancy admin
 
 ## Deploy Using Oracle Resource Manager
 
-1. Click [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/bhushanraja/rk-rc-dw-2022-hackathon/tree/main/blueline-api/releases/latest/download/oci-arch-devops-oke-stack-latest.zip)
+1. Click [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/bhushanraja/rk-rc-dw-2022-hackathon/releases/latest/download/oci-arch-devops-oke-stack-latest.zip)
 
-   If you aren't already signed in, when prompted, enter the tenancy and user credentials.
+    If you aren't already signed in, when prompted, enter the tenancy and user credentials.
 
 2. Review and accept the terms and conditions.
 
@@ -34,9 +28,9 @@ If you don't have the required permissions and quota, contact your tenancy admin
 
 6. Wait for the job to be completed, and review the plan.
 
-   To make any changes, return to the Stack Details page, click **Edit Stack**, and make the required changes. Then, run the **Plan** action again.
+    To make any changes, return to the Stack Details page, click **Edit Stack**, and make the required changes. Then, run the **Plan** action again.
 
-7. If no further changes are necessary, return to the Stack Details page, click **Terraform Actions**, and select **Apply**.
+7. If no further changes are necessary, return to the Stack Details page, click **Terraform Actions**, and select **Apply**. 
 
 ## Deploy Using the Terraform CLI
 
@@ -84,3 +78,9 @@ Run the following commands:
 When you no longer need the deployment, you can run this command to destroy the resources:
 
     terraform destroy
+
+## Architecture Diagram
+
+![](./images/dev-ops-deployment-pipeline.png)
+
+
