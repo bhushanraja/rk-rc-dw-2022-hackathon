@@ -10,7 +10,7 @@ This is the frontend application developed using Angular
 ### blueline-api
 This is the backend application developed using SpringBoot and MySQL
 
-## Prerequisites
+## OCI Env Prerequisites
 
 - Permission to `manage` the following types of resources in your Oracle Cloud Infrastructure tenancy: `vcns`, `internet-gateways`, `load-balancers`, `route-tables`, `security-lists`, `subnets`, and `instances`.
 
